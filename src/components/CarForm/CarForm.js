@@ -6,7 +6,7 @@ import {carActions} from "../../redux/slices";
 
 const CarForm = () => {
     const {reset, register, handleSubmit, setValue} = useForm();
-    const {carForUpdate, errors} = useSelector(state => state.cars);
+    const {carForUpdate} = useSelector(state => state.cars);
     const dispatch = useDispatch();
 
     useEffect(() => {
